@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46B041511AA99755004BDD73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B041501AA99755004BDD73 /* main.m */; };
+		46B041541AA99755004BDD73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B041531AA99755004BDD73 /* AppDelegate.m */; };
+		46B041571AA99755004BDD73 /* SIOChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 46B041551AA99755004BDD73 /* SIOChat.xcdatamodeld */; };
+		46B0415A1AA99755004BDD73 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B041591AA99755004BDD73 /* ViewController.m */; };
+		46B0415D1AA99755004BDD73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46B0415B1AA99755004BDD73 /* Main.storyboard */; };
+		46B0415F1AA99755004BDD73 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B0415E1AA99755004BDD73 /* Images.xcassets */; };
+		46B041621AA99755004BDD73 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B041601AA99755004BDD73 /* LaunchScreen.xib */; };
+		46B0416E1AA99755004BDD73 /* SIOChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B0416D1AA99755004BDD73 /* SIOChatTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46B041681AA99755004BDD73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46B041431AA99755004BDD73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46B0414A1AA99755004BDD73;
+			remoteInfo = SIOChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		46B0414B1AA99755004BDD73 /* SIOChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SIOChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46B0414F1AA99755004BDD73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46B041501AA99755004BDD73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		46B041521AA99755004BDD73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		46B041531AA99755004BDD73 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		46B041561AA99755004BDD73 /* SIOChat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SIOChat.xcdatamodel; sourceTree = "<group>"; };
+		46B041581AA99755004BDD73 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		46B041591AA99755004BDD73 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		46B0415C1AA99755004BDD73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46B0415E1AA99755004BDD73 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		46B041611AA99755004BDD73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		46B041671AA99755004BDD73 /* SIOChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SIOChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46B0416C1AA99755004BDD73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46B0416D1AA99755004BDD73 /* SIOChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIOChatTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46B041481AA99755004BDD73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46B041641AA99755004BDD73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46B041421AA99755004BDD73 = {
+			isa = PBXGroup;
+			children = (
+				46B0414D1AA99755004BDD73 /* SIOChat */,
+				46B0416A1AA99755004BDD73 /* SIOChatTests */,
+				46B0414C1AA99755004BDD73 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46B0414C1AA99755004BDD73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46B0414B1AA99755004BDD73 /* SIOChat.app */,
+				46B041671AA99755004BDD73 /* SIOChatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46B0414D1AA99755004BDD73 /* SIOChat */ = {
+			isa = PBXGroup;
+			children = (
+				46B041521AA99755004BDD73 /* AppDelegate.h */,
+				46B041531AA99755004BDD73 /* AppDelegate.m */,
+				46B041581AA99755004BDD73 /* ViewController.h */,
+				46B041591AA99755004BDD73 /* ViewController.m */,
+				46B0415B1AA99755004BDD73 /* Main.storyboard */,
+				46B0415E1AA99755004BDD73 /* Images.xcassets */,
+				46B041601AA99755004BDD73 /* LaunchScreen.xib */,
+				46B041551AA99755004BDD73 /* SIOChat.xcdatamodeld */,
+				46B0414E1AA99755004BDD73 /* Supporting Files */,
+			);
+			path = SIOChat;
+			sourceTree = "<group>";
+		};
+		46B0414E1AA99755004BDD73 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46B0414F1AA99755004BDD73 /* Info.plist */,
+				46B041501AA99755004BDD73 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46B0416A1AA99755004BDD73 /* SIOChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				46B0416D1AA99755004BDD73 /* SIOChatTests.m */,
+				46B0416B1AA99755004BDD73 /* Supporting Files */,
+			);
+			path = SIOChatTests;
+			sourceTree = "<group>";
+		};
+		46B0416B1AA99755004BDD73 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46B0416C1AA99755004BDD73 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46B0414A1AA99755004BDD73 /* SIOChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46B041711AA99755004BDD73 /* Build configuration list for PBXNativeTarget "SIOChat" */;
+			buildPhases = (
+				46B041471AA99755004BDD73 /* Sources */,
+				46B041481AA99755004BDD73 /* Frameworks */,
+				46B041491AA99755004BDD73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SIOChat;
+			productName = SIOChat;
+			productReference = 46B0414B1AA99755004BDD73 /* SIOChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		46B041661AA99755004BDD73 /* SIOChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46B041741AA99755004BDD73 /* Build configuration list for PBXNativeTarget "SIOChatTests" */;
+			buildPhases = (
+				46B041631AA99755004BDD73 /* Sources */,
+				46B041641AA99755004BDD73 /* Frameworks */,
+				46B041651AA99755004BDD73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46B041691AA99755004BDD73 /* PBXTargetDependency */,
+			);
+			name = SIOChatTests;
+			productName = SIOChatTests;
+			productReference = 46B041671AA99755004BDD73 /* SIOChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46B041431AA99755004BDD73 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = mitolab;
+				TargetAttributes = {
+					46B0414A1AA99755004BDD73 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					46B041661AA99755004BDD73 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 46B0414A1AA99755004BDD73;
+					};
+				};
+			};
+			buildConfigurationList = 46B041461AA99755004BDD73 /* Build configuration list for PBXProject "SIOChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46B041421AA99755004BDD73;
+			productRefGroup = 46B0414C1AA99755004BDD73 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46B0414A1AA99755004BDD73 /* SIOChat */,
+				46B041661AA99755004BDD73 /* SIOChatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46B041491AA99755004BDD73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46B0415D1AA99755004BDD73 /* Main.storyboard in Resources */,
+				46B041621AA99755004BDD73 /* LaunchScreen.xib in Resources */,
+				46B0415F1AA99755004BDD73 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46B041651AA99755004BDD73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46B041471AA99755004BDD73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46B041571AA99755004BDD73 /* SIOChat.xcdatamodeld in Sources */,
+				46B041541AA99755004BDD73 /* AppDelegate.m in Sources */,
+				46B0415A1AA99755004BDD73 /* ViewController.m in Sources */,
+				46B041511AA99755004BDD73 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46B041631AA99755004BDD73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46B0416E1AA99755004BDD73 /* SIOChatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46B041691AA99755004BDD73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46B0414A1AA99755004BDD73 /* SIOChat */;
+			targetProxy = 46B041681AA99755004BDD73 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		46B0415B1AA99755004BDD73 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46B0415C1AA99755004BDD73 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		46B041601AA99755004BDD73 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46B041611AA99755004BDD73 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46B0416F1AA99755004BDD73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46B041701AA99755004BDD73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46B041721AA99755004BDD73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SIOChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		46B041731AA99755004BDD73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SIOChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		46B041751AA99755004BDD73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SIOChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SIOChat.app/SIOChat";
+			};
+			name = Debug;
+		};
+		46B041761AA99755004BDD73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SIOChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SIOChat.app/SIOChat";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46B041461AA99755004BDD73 /* Build configuration list for PBXProject "SIOChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46B0416F1AA99755004BDD73 /* Debug */,
+				46B041701AA99755004BDD73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46B041711AA99755004BDD73 /* Build configuration list for PBXNativeTarget "SIOChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46B041721AA99755004BDD73 /* Debug */,
+				46B041731AA99755004BDD73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		46B041741AA99755004BDD73 /* Build configuration list for PBXNativeTarget "SIOChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46B041751AA99755004BDD73 /* Debug */,
+				46B041761AA99755004BDD73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		46B041551AA99755004BDD73 /* SIOChat.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				46B041561AA99755004BDD73 /* SIOChat.xcdatamodel */,
+			);
+			currentVersion = 46B041561AA99755004BDD73 /* SIOChat.xcdatamodel */;
+			path = SIOChat.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 46B041431AA99755004BDD73 /* Project object */;
+}
