@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Twg-C4-kQD">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--Chat View Controller-->
+        <scene sceneID="13q-ym-lSL">
+            <objects>
+                <viewController id="y1x-Ux-25n" customClass="ChatViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5cA-BM-Aqm"/>
+                        <viewControllerLayoutGuide type="bottom" id="oh6-sK-FsT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wf6-dG-ouc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gnR-ym-ygf">
+                        <barButtonItem key="leftBarButtonItem" title="←" id="l6E-So-t1j">
+                            <connections>
+                                <action selector="leftDrawerButtonPress:" destination="y1x-Ux-25n" id="687-Da-nwe"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Join" id="kYv-ha-Gjc">
+                            <connections>
+                                <action selector="joinBtnTapped:" destination="y1x-Ux-25n" id="4DS-My-FYd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="joinBtn" destination="kYv-ha-Gjc" id="zaR-PZ-bsm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EQ1-Rg-yt0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1966" y="423"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="C8A-Xg-yxM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Twg-C4-kQD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KhD-Lr-gGe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="y1x-Ux-25n" kind="relationship" relationship="rootViewController" id="zbp-0o-HtA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ukD-12-dzU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1154" y="423"/>
+        </scene>
+    </scenes>
+</document>

@@ -10,11 +10,19 @@
 		46B041511AA99755004BDD73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B041501AA99755004BDD73 /* main.m */; };
 		46B041541AA99755004BDD73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B041531AA99755004BDD73 /* AppDelegate.m */; };
 		46B041571AA99755004BDD73 /* SIOChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 46B041551AA99755004BDD73 /* SIOChat.xcdatamodeld */; };
-		46B0415A1AA99755004BDD73 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B041591AA99755004BDD73 /* ViewController.m */; };
-		46B0415D1AA99755004BDD73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46B0415B1AA99755004BDD73 /* Main.storyboard */; };
 		46B0415F1AA99755004BDD73 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B0415E1AA99755004BDD73 /* Images.xcassets */; };
 		46B041621AA99755004BDD73 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B041601AA99755004BDD73 /* LaunchScreen.xib */; };
 		46B0416E1AA99755004BDD73 /* SIOChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B0416D1AA99755004BDD73 /* SIOChatTests.m */; };
+		46B041841AA9A0C9004BDD73 /* ChatTimeLine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46B041831AA9A0C9004BDD73 /* ChatTimeLine.storyboard */; };
+		46C2453B1AB47DB6007C4F93 /* ChatDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C2453A1AB47DB6007C4F93 /* ChatDataModel.m */; };
+		46C245421AB47F75007C4F93 /* _Param.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C2453F1AB47F75007C4F93 /* _Param.m */; };
+		46C245431AB47F75007C4F93 /* Param.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C245411AB47F75007C4F93 /* Param.m */; };
+		46C245461AB483C5007C4F93 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C245451AB483C5007C4F93 /* ChatViewController.m */; };
+		46C2454E1AB57849007C4F93 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46C2454D1AB57849007C4F93 /* Profile.storyboard */; };
+		46C245511AB57952007C4F93 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C245501AB57952007C4F93 /* ProfileViewController.m */; };
+		46C245531AB5EA93007C4F93 /* LeftDrawer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46C245521AB5EA93007C4F93 /* LeftDrawer.storyboard */; };
+		46C245561AB5F0DF007C4F93 /* LeftDrawerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C245551AB5F0DF007C4F93 /* LeftDrawerTableViewController.m */; };
+		F6799A7A58D0F241B780D5E5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73C8682908B3A29BEBA92E99 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,14 +42,32 @@
 		46B041521AA99755004BDD73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		46B041531AA99755004BDD73 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		46B041561AA99755004BDD73 /* SIOChat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SIOChat.xcdatamodel; sourceTree = "<group>"; };
-		46B041581AA99755004BDD73 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		46B041591AA99755004BDD73 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		46B0415C1AA99755004BDD73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46B0415E1AA99755004BDD73 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		46B041611AA99755004BDD73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		46B041671AA99755004BDD73 /* SIOChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SIOChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B0416C1AA99755004BDD73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46B0416D1AA99755004BDD73 /* SIOChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIOChatTests.m; sourceTree = "<group>"; };
+		46B041831AA9A0C9004BDD73 /* ChatTimeLine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ChatTimeLine.storyboard; sourceTree = "<group>"; };
+		46B041851AA9A236004BDD73 /* SIOChat-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SIOChat-PrefixHeader.pch"; sourceTree = "<group>"; };
+		46C245371AB47430007C4F93 /* AppConsts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConsts.h; sourceTree = "<group>"; };
+		46C245381AB47958007C4F93 /* ReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
+		46C245391AB47DB6007C4F93 /* ChatDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatDataModel.h; sourceTree = "<group>"; };
+		46C2453A1AB47DB6007C4F93 /* ChatDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatDataModel.m; sourceTree = "<group>"; };
+		46C2453E1AB47F75007C4F93 /* _Param.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Param.h; sourceTree = "<group>"; };
+		46C2453F1AB47F75007C4F93 /* _Param.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Param.m; sourceTree = "<group>"; };
+		46C245401AB47F75007C4F93 /* Param.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Param.h; sourceTree = "<group>"; };
+		46C245411AB47F75007C4F93 /* Param.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Param.m; sourceTree = "<group>"; };
+		46C245441AB483C5007C4F93 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		46C245451AB483C5007C4F93 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		46C2454D1AB57849007C4F93 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		46C2454F1AB57952007C4F93 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		46C245501AB57952007C4F93 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		46C245521AB5EA93007C4F93 /* LeftDrawer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LeftDrawer.storyboard; sourceTree = "<group>"; };
+		46C245541AB5F0DF007C4F93 /* LeftDrawerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftDrawerTableViewController.h; sourceTree = "<group>"; };
+		46C245551AB5F0DF007C4F93 /* LeftDrawerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftDrawerTableViewController.m; sourceTree = "<group>"; };
+		730A10EDF7341E4C5A5168E8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		73C8682908B3A29BEBA92E99 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		77D6837B14DBCBECFB5E6074 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6799A7A58D0F241B780D5E5 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,12 +89,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16A0A9192584DC11138E53EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77D6837B14DBCBECFB5E6074 /* Pods.debug.xcconfig */,
+				730A10EDF7341E4C5A5168E8 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		46B041421AA99755004BDD73 = {
 			isa = PBXGroup;
 			children = (
+				46C245381AB47958007C4F93 /* ReadMe.md */,
 				46B0414D1AA99755004BDD73 /* SIOChat */,
 				46B0416A1AA99755004BDD73 /* SIOChatTests */,
 				46B0414C1AA99755004BDD73 /* Products */,
+				16A0A9192584DC11138E53EA /* Pods */,
+				EC79D5CC9C0974AE8EBEBCA1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,11 +122,12 @@
 		46B0414D1AA99755004BDD73 /* SIOChat */ = {
 			isa = PBXGroup;
 			children = (
+				46C245371AB47430007C4F93 /* AppConsts.h */,
 				46B041521AA99755004BDD73 /* AppDelegate.h */,
 				46B041531AA99755004BDD73 /* AppDelegate.m */,
-				46B041581AA99755004BDD73 /* ViewController.h */,
-				46B041591AA99755004BDD73 /* ViewController.m */,
-				46B0415B1AA99755004BDD73 /* Main.storyboard */,
+				46B041771AA99C1E004BDD73 /* Models */,
+				46B041801AA99FCA004BDD73 /* Views */,
+				46B0417F1AA99FCA004BDD73 /* Controllers */,
 				46B0415E1AA99755004BDD73 /* Images.xcassets */,
 				46B041601AA99755004BDD73 /* LaunchScreen.xib */,
 				46B041551AA99755004BDD73 /* SIOChat.xcdatamodeld */,
@@ -101,6 +141,7 @@
 			children = (
 				46B0414F1AA99755004BDD73 /* Info.plist */,
 				46B041501AA99755004BDD73 /* main.m */,
+				46B041851AA9A236004BDD73 /* SIOChat-PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -122,6 +163,66 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		46B041771AA99C1E004BDD73 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				46C2453C1AB47F75007C4F93 /* CoreData */,
+				46C245391AB47DB6007C4F93 /* ChatDataModel.h */,
+				46C2453A1AB47DB6007C4F93 /* ChatDataModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		46B0417F1AA99FCA004BDD73 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				46C245441AB483C5007C4F93 /* ChatViewController.h */,
+				46C245451AB483C5007C4F93 /* ChatViewController.m */,
+				46C2454F1AB57952007C4F93 /* ProfileViewController.h */,
+				46C245501AB57952007C4F93 /* ProfileViewController.m */,
+				46C245541AB5F0DF007C4F93 /* LeftDrawerTableViewController.h */,
+				46C245551AB5F0DF007C4F93 /* LeftDrawerTableViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		46B041801AA99FCA004BDD73 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				46B041831AA9A0C9004BDD73 /* ChatTimeLine.storyboard */,
+				46C2454D1AB57849007C4F93 /* Profile.storyboard */,
+				46C245521AB5EA93007C4F93 /* LeftDrawer.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		46C2453C1AB47F75007C4F93 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				46C2453D1AB47F75007C4F93 /* machine */,
+				46C245401AB47F75007C4F93 /* Param.h */,
+				46C245411AB47F75007C4F93 /* Param.m */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		46C2453D1AB47F75007C4F93 /* machine */ = {
+			isa = PBXGroup;
+			children = (
+				46C2453E1AB47F75007C4F93 /* _Param.h */,
+				46C2453F1AB47F75007C4F93 /* _Param.m */,
+			);
+			path = machine;
+			sourceTree = "<group>";
+		};
+		EC79D5CC9C0974AE8EBEBCA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73C8682908B3A29BEBA92E99 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +230,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46B041711AA99755004BDD73 /* Build configuration list for PBXNativeTarget "SIOChat" */;
 			buildPhases = (
+				3A2970CC328B1C1BAF290D63 /* Check Pods Manifest.lock */,
 				46B041471AA99755004BDD73 /* Sources */,
 				46B041481AA99755004BDD73 /* Frameworks */,
 				46B041491AA99755004BDD73 /* Resources */,
+				CAA72E4D5517A2553D82ACF5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,9 +305,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46B0415D1AA99755004BDD73 /* Main.storyboard in Resources */,
 				46B041621AA99755004BDD73 /* LaunchScreen.xib in Resources */,
+				46B041841AA9A0C9004BDD73 /* ChatTimeLine.storyboard in Resources */,
+				46C2454E1AB57849007C4F93 /* Profile.storyboard in Resources */,
 				46B0415F1AA99755004BDD73 /* Images.xcassets in Resources */,
+				46C245531AB5EA93007C4F93 /* LeftDrawer.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,15 +322,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3A2970CC328B1C1BAF290D63 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CAA72E4D5517A2553D82ACF5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		46B041471AA99755004BDD73 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46C245561AB5F0DF007C4F93 /* LeftDrawerTableViewController.m in Sources */,
+				46C245461AB483C5007C4F93 /* ChatViewController.m in Sources */,
+				46C245511AB57952007C4F93 /* ProfileViewController.m in Sources */,
 				46B041571AA99755004BDD73 /* SIOChat.xcdatamodeld in Sources */,
+				46C245421AB47F75007C4F93 /* _Param.m in Sources */,
+				46C245431AB47F75007C4F93 /* Param.m in Sources */,
 				46B041541AA99755004BDD73 /* AppDelegate.m in Sources */,
-				46B0415A1AA99755004BDD73 /* ViewController.m in Sources */,
 				46B041511AA99755004BDD73 /* main.m in Sources */,
+				46C2453B1AB47DB6007C4F93 /* ChatDataModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,14 +391,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		46B0415B1AA99755004BDD73 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				46B0415C1AA99755004BDD73 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		46B041601AA99755004BDD73 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -301,7 +436,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -337,7 +472,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -347,9 +482,13 @@
 		};
 		46B041721AA99755004BDD73 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77D6837B14DBCBECFB5E6074 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = "SIOChat/SIOChat-PrefixHeader.pch";
 				INFOPLIST_FILE = SIOChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -357,9 +496,13 @@
 		};
 		46B041731AA99755004BDD73 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 730A10EDF7341E4C5A5168E8 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = "SIOChat/SIOChat-PrefixHeader.pch";
 				INFOPLIST_FILE = SIOChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -418,6 +561,7 @@
 				46B041731AA99755004BDD73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46B041741AA99755004BDD73 /* Build configuration list for PBXNativeTarget "SIOChatTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +570,7 @@
 				46B041761AA99755004BDD73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -7,16 +7,68 @@
 //
 
 #import "AppDelegate.h"
+#import <MMDrawerController.h>
+#import <MMDrawerVisualState.h>
+#import "ChatViewController.h"
 
 @interface AppDelegate ()
-
+@property (nonatomic, strong) MMDrawerController * drawerController;
 @end
 
 @implementation AppDelegate
 
+-(BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    // Prepare center
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"ChatTimeLine" bundle:nil];
+    id centerNavCon = [storyBoard instantiateInitialViewController];
+    
+    // Prepare left drawer
+    storyBoard = [UIStoryboard storyboardWithName:@"LeftDrawer" bundle:nil];
+    id leftVc = [storyBoard instantiateInitialViewController];
+    
+    // Set MMDrawer
+    self.drawerController = [[MMDrawerController alloc]
+                             initWithCenterViewController:centerNavCon
+                             leftDrawerViewController:leftVc];
+
+    // MMDrawer options
+    [self.drawerController setShowsShadow:NO];
+    [self.drawerController setMaximumLeftDrawerWidth:240.0];
+    [self.drawerController setOpenDrawerGestureModeMask:
+     (MMOpenDrawerGestureModePanningNavigationBar | MMOpenDrawerGestureModeBezelPanningCenterView)];
+    [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+    [self.drawerController
+     setDrawerVisualStateBlock:[MMDrawerVisualState parallaxVisualStateBlockWithParallaxFactor:2.0]];
+    [self.drawerController setShouldStretchDrawer:NO];
+    
+    // Paste window with above
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self.window setRootViewController:self.drawerController];
+    
+    return YES;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    // Save UUID as an own id (if needed)
+    NSString *ownId = [Lockbox stringForKey:kOwnIdKey];
+    if(!ownId || ![ownId isKindOfClass:[NSString class]]){
+        [Lockbox setString:[[NSUUID UUID]UUIDString] forKey:kOwnIdKey];
+    }
+    
+    // Set default nickname
+    NSString *ownNickname = [Lockbox stringForKey:kOwnNicknameKey];
+    if(!ownNickname){
+        [Lockbox setString:kDefaultNickname forKey:kOwnNicknameKey];
+    }
+    
+    // Initialize coredata
+    [MagicalRecord setupCoreDataStackWithStoreNamed:@"db.sqlite"];
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+
     return YES;
 }
 
@@ -41,6 +93,9 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     // Saves changes in the application's managed object context before the application terminates.
+    
+    [MagicalRecord cleanUp];
+    
     [self saveContext];
 }
 

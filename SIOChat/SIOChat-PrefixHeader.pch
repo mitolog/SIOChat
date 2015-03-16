@@ -1,0 +1,25 @@
+//
+//  SIOChat-PrefixHeader.pch
+//  SIOChat
+//
+//  Created by YuheiMiyazato on 3/6/15.
+//  Copyright (c) 2015 mitolab. All rights reserved.
+//
+
+#ifndef SIOChat_SIOChat_PrefixHeader_pch
+#define SIOChat_SIOChat_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <Lockbox.h>
+    #import <CoreData+MagicalRecord.h>
+    #import <BlocksKit+UIKit.h>
+    #import <Underscore.h>
+    #import "AppConsts.h"
+#endif
+
+#endif

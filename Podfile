@@ -1,0 +1,10 @@
+platform :ios, '7.0'
+
+pod 'MMDrawerController', '~> 0.5.7'
+pod 'Lockbox', '~> 2.1.0'
+pod 'SIOSocket', '~> 0.2.0'
+pod 'MagicalRecord'
+pod 'JSQMessagesViewController'
+pod 'JSQSystemSoundPlayer'
+pod 'BlocksKit'
+pod 'Underscore.m', '~> 0.2'
