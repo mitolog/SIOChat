@@ -1,4 +1,5 @@
-# Xcode (from gitignore.io)
+# Xcode
+#
 build/
 *.pbxuser
 !default.pbxuser
@@ -24,3 +25,4 @@ Podfile.lock
 *.swp
 !.gitkeep
 .DS_Store
+
