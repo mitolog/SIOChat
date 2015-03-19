@@ -20,6 +20,7 @@
     #import <BlocksKit+UIKit.h>
     #import <Underscore.h>
     #import "AppConsts.h"
+    #import <AFNetworking.h>
 #endif
 
 #endif

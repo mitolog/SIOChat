@@ -11,4 +11,5 @@
 @interface ProfileViewController : UIViewController
 <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *nicknameLabel;
+@property (nonatomic, copy) dispatch_block_t dismissCompletion;
 @end

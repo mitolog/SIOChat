@@ -13,6 +13,8 @@
 #import <MMDrawerController/UIViewController+MMDrawerController.h>
 #import <MMDrawerController/MMDrawerBarButtonItem.h>
 #import "LeftDrawerTableViewController.h"
+#import "UIViewController+DismissBlock.h"
+#import "ProfileViewController.h"
 
 @interface ChatViewController ()
 <LeftDrawerTableViewControllerDelegate>
@@ -268,9 +270,40 @@
 
 - (void)profileTapped:(id)sender
 {
+    NSString *prevNickname = [Lockbox stringForKey:kOwnNicknameKey];
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Profile" bundle:nil];
-    UIViewController* profileNavCon = [storyBoard instantiateInitialViewController];
+    UINavigationController* profileNavCon = [storyBoard instantiateInitialViewController];
+    ProfileViewController *pvc = (ProfileViewController*)[profileNavCon topViewController];
+    pvc.dismissCompletion = ^{
+
+        // Post to other nodes
+        NSString *newNickname = [Lockbox stringForKey:kOwnNicknameKey];
+        
+        Param *param = [Param MR_createEntity];
+        param.isParent = ([self.currentRoom isEqualToString:self.parentRoomId]) ? @YES : @NO;
+        param.message = [NSString stringWithFormat:@"changed nickname from \"%@\" to \"%@\"",prevNickname ,newNickname];
+        param.nickname = newNickname;
+        param.room = self.currentRoom;
+        param.uuid = self.senderId;
+        
+        AFHTTPRequestOperationManager* manager = [AFHTTPRequestOperationManager manager];
+        manager.responseSerializer = [AFJSONResponseSerializer serializer];
+        manager.requestSerializer = [AFJSONRequestSerializer serializer];
+        NSString *postFilePath = [NSString stringWithFormat:@"%@/%@",
+                                  kHTTPHostName, kEmitFilePath];
+        [manager POST:postFilePath
+           parameters:@{@"param":[param paramStr]}
+              success:^(AFHTTPRequestOperation *operation, id responseObject)
+         {
+             NSLog(@"posted");
+         } failure:^(AFHTTPRequestOperation *operation, NSError *error)
+         {
+             NSLog(@"Error: %@", error);
+         }];
+        
+    };
     [self presentViewController:profileNavCon animated:YES completion:nil];
+    
 }
 
 #pragma mark - JSQMessagesViewController method overrides

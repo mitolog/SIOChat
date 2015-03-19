@@ -10,6 +10,8 @@
 #define SIOChat_AppConsts_h
 
 static NSString * const kWebSocketHostName = @"ws://ec2-user@ec2-54-65-59-13.ap-northeast-1.compute.amazonaws.com:3000";
+static NSString * const kHTTPHostName = @"http://ec2-user@ec2-54-65-59-13.ap-northeast-1.compute.amazonaws.com";
+static NSString * const kEmitFilePath = @"/socket.io-php-emitter/SIOChatEmitter.php";
 
 static NSString * const kWsDataSeparater = @",";
 static NSString * const kOwnIdKey = @"ownIdKey";
